@@ -7,7 +7,7 @@ const {
 
 module.exports = {
     name: "announcement",
-    description: "Faire une annonce (sous forme d'embed)",
+    description: "📣 Faire une annonce (sous forme d'embed)",
     options: [
         {
             name: "titre",
@@ -81,7 +81,7 @@ module.exports = {
             });
 
         console.log(
-            `[ANNOUNCEMENT] - Annonce de ${user.username} : "${announcementEmbedContent.title}", envoyée avec succès.`
+            `📣 [ANNOUNCEMENT] - Annonce de ${user.username} : "${announcementEmbedContent.title}", envoyée avec succès.`
         );
         await interaction.channel.send({ embeds: [announcementEmbed] });
         await interaction.reply({
